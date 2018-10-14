@@ -53,7 +53,7 @@
 
         <div class="container">
             <h2 class="demo">Request a demo</h2>
-            <form method ="POST" name="request" action="../form-to-email.php">
+            <form method ="POST" name="request" action="https://formspree.io/marcus.scalice@gmail.com">
               <div class="row">
                 <div class="col-25">
                   <label for="fname">First Name</label>
@@ -96,18 +96,11 @@
               </div>
               <div class="row">
                 <input type="submit" name="submit" value="Submit">
+                <input type="hidden" name="_next" value="thank-you.html" />
               </div>
             </form>
           </div>
             <script language="JavaScript">
-                // Code for validating the form
-                // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-                // for details
-                var frmvalidator  = new Validator("request");
-                frmvalidator.addValidation("fname","req","Please provide your first name"); 
-                frmvalidator.addValidation("lname","req","Please provide your last name");
-                frmvalidator.addValidation("email","req","Please provide your email"); 
-                frmvalidator.addValidation("email","email","Please enter a valid email address"); 
             </script>
 
     </main><!-- .main-area -->
